@@ -10,15 +10,24 @@
 
 #include <stdio.h>
 
+#define PI 3.14
+
 int main(){
     // Khai báo biến
+    float banKinh;
+    float chuVi, dienTich;
 
-    // Nhập dữ liệu
+    // Nhập bán kính
+    printf("Nhap ban kinh hinh tron: ");
+    scanf("%f", &banKinh);
 
+    // Tính chu vi và diện tích
+    chuVi = 2 * PI * banKinh;
+    dienTich = PI * banKinh * banKinh;
 
-    // Xử lý, tính toán
+    // Xuất kết quả
+    printf("Chu vi hinh tron: %.2f\n", chuVi);
+    printf("Dien tich hinh tron: %.2f\n", dienTich);
 
-    // Hiển thị kết quả
-
-
+    return 0;
 }

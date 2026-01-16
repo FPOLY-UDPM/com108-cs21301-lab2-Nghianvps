@@ -12,13 +12,23 @@
 
 int main(){
     // Khai báo biến
+    float chieuDai, chieuRong;
+    float chuVi, dienTich;
 
     // Nhập dữ liệu
+    printf("Nhap chieu dai: ");
+    scanf("%f", &chieuDai);
 
+    printf("Nhap chieu rong: ");
+    scanf("%f", &chieuRong);
 
-    // Xử lý, tính toán
+    // Tính toán
+    chuVi = (chieuDai + chieuRong) * 2;
+    dienTich = chieuDai * chieuRong;
 
-    // Hiển thị kết quả
+    // Xuất kết quả
+    printf("Chu vi hinh chu nhat: %.2f\n", chuVi);
+    printf("Dien tich hinh chu nhat: %.2f\n", dienTich);
 
-
+    return 0;
 }
