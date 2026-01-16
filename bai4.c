@@ -14,13 +14,24 @@
 
 int main(){
     // Khai báo biến
+    float toan, ly, hoa;
+    float diemTrungBinh;
 
-    // Nhập dữ liệu
+    // Nhập điểm
+    printf("Nhap diem Toan: ");
+    scanf("%f", &toan);
 
+    printf("Nhap diem Ly: ");
+    scanf("%f", &ly);
 
-    // Xử lý, tính toán
+    printf("Nhap diem Hoa: ");
+    scanf("%f", &hoa);
 
-    // Hiển thị kết quả
+    // Tính điểm trung bình có hệ số
+    diemTrungBinh = (toan * 3 + ly * 2 + hoa * 1) / 6;
 
+    // Xuất kết quả
+    printf("Diem trung binh: %.2f\n", diemTrungBinh);
 
+    return 0;
 }
